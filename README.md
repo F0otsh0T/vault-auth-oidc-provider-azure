@@ -18,6 +18,8 @@ Based on the tutorial for [HashiCorp Vault OIDC Provider Authentication Method f
 
 [![HashiCorp Vault Authentication - OIDC Provider for Azure Active Directory](assets/vault.auth-oidc-azure.01.png "HCP Boundary in Azure Overview")](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/azuread)
 
+#### Resources
+
 This Repo codifies some highlighted Azure and HashiCorp Vault `resources` (not comprehensive):
 
 - Provider: [**hashicorp/azuread**](https://registry.terraform.io/providers/hashicorp/azuread/latest)
@@ -55,7 +57,10 @@ Place your user into the appropriate Azure AD / Entra Group(s) to apply the corr
 - Go to ./terraform directory, execute `terraform init` and `terraform apply`
 - Place your user into the appropriate Azure AD / Entra Group(s) to apply the correct Group Policies.
 - Log in to Vault UI via `OIDC` Authentication and set the `More Options` => `Mount Path` to your TF Variable value for `var.vault_auth_mount_path` (default: `oidc-azure`)
-
+- Verify ability to read secrets at `secret/app1` or `secret/app2` KVv2 Secrets paths.
+- Log out
+- Repeat with other Azure AD / Entra Group(s)
+- Log back in
 ---
 ## FILES
 Repo Layout
@@ -90,7 +95,8 @@ Repo Layout
     ├── terraform.tfstate
     └──  terraform.tfstate.backup
 ```
-## INPUTS
+
+---
 
 ## TERRAFORM
 #### Requirements
