@@ -8,22 +8,22 @@ description: Integrate HashiCorp Vault OIDC Authentication with Third Party Azur
 
 ## REQUIREMENTS
 - Azure
-  - [`az login`](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively){target="_blank"}
-- [HashiCorp Vault](https://www.hashicorp.com/products/vault){target="_blank"} & [Vault CLI](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install){target="_blank"}
-- [HashiCorp Terraform](https://developer.hashicorp.com/terraform/install){target="_blank"}
+  - [`az login`](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively)
+- [HashiCorp Vault](https://www.hashicorp.com/products/vault) & [Vault CLI](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install)
+- [HashiCorp Terraform](https://developer.hashicorp.com/terraform/install)
 
 ## OVERVIEW
 
-Based on the tutorial for [HashiCorp Vault OIDC Provider Authentication Method for Azure AD (Entra)](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/azuread#optional-azure-specific-configuration){target="_blank"}, this is the High Level Overview workflow:
+Based on the tutorial for [HashiCorp Vault OIDC Provider Authentication Method for Azure AD (Entra)](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/azuread#optional-azure-specific-configuration), this is the High Level Overview workflow:
 
-[![HashiCorp Vault Authentication - OIDC Provider for Azure Active Directory](assets/vault.auth-oidc-azure.01.png "HCP Boundary in Azure Overview")](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/azuread){target="_blank"}
+[![HashiCorp Vault Authentication - OIDC Provider for Azure Active Directory](assets/vault.auth-oidc-azure.01.png "HCP Boundary in Azure Overview")](https://developer.hashicorp.com/vault/docs/auth/jwt/oidc-providers/azuread)
 
 This Repo codifies some highlighted Azure and HashiCorp Vault `resources` (not comprehensive):
 
-- Provider: [**hashicorp/azuread**](https://registry.terraform.io/providers/hashicorp/azuread/latest){target="_blank"}
+- Provider: [**hashicorp/azuread**](https://registry.terraform.io/providers/hashicorp/azuread/latest)
   - `azuread_application`
   - `azuread_group`
-- Provider: [**hashicorp/vault**](https://registry.terraform.io/providers/hashicorp/vault/latest){target="_blank"}
+- Provider: [**hashicorp/vault**](https://registry.terraform.io/providers/hashicorp/vault/latest)
   - `vault_jwt_auth_backend`
   - `vault_jwt_auth_backend_role`
   - `vault_policy`
@@ -33,7 +33,7 @@ This Repo codifies some highlighted Azure and HashiCorp Vault `resources` (not c
     - `secret/app1` (`vault kv metadata get -mount=secret app1`)
     - `secret/app2` (`vault kv metadata get -mount=secret app2`)
 
-[![]( "")](){target="_blank"}
+[![]( "")]()
 
 #### Groups: Azure AD / Entra <=> Vault Mapping
 
