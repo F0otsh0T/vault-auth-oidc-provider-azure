@@ -44,10 +44,10 @@ Place your user into the appropriate Azure AD / Entra Group(s) to apply the corr
 | AZURE GROUP | VAULT GROUP | VAULT SECRETS PATH | VAULT POLICY |
 |-|-|-|-|
 | {{user}}-demo-oidc-group-example | vault_identity_group.oidc_provider_azure_group_example | | []() |
-| {{user-}}demo-oidc-group-app1 | vault_identity_group.oidc_provider_azure_group_app1 | **secrets/app1** | [app1_owner_policy.tpl](./terraform/templates/app1_owner_policy.tpl) |
-| {{user-}}demo-oidc-group-app2 | vault_identity_group.oidc_provider_azure_group_app2 | **secrets/app2** | [app2_owner_policy.tpl](./terraform//templates/app2_owner_policy.tpl) |
-| {{user-}}demo-oidc-group-admin | vault_identity_group.oidc_provider_azure_group_admin | **secrets/*** | [vault_admin_owner_policy.tpl](./terraform/templates/vault_admin_policy.tpl) |
-| {{user-}}demo-oidc-group-super-admin | vault_identity_group.oidc_provider_azure_group_super_admin | **secrets/***| [vault_super_admin_policy.tpl](./terraform/templates/vault_super_admin_policy.tpl) |
+| {{user}}-demo-oidc-group-app1 | vault_identity_group.oidc_provider_azure_group_app1 | **secrets/app1** | [app1_owner_policy.tpl](./terraform/templates/app1_owner_policy.tpl) |
+| {{user}}-demo-oidc-group-app2 | vault_identity_group.oidc_provider_azure_group_app2 | **secrets/app2** | [app2_owner_policy.tpl](./terraform//templates/app2_owner_policy.tpl) |
+| {{user}}-demo-oidc-group-admin | vault_identity_group.oidc_provider_azure_group_admin | **secrets/*** | [vault_admin_owner_policy.tpl](./terraform/templates/vault_admin_policy.tpl) |
+| {{user}}-demo-oidc-group-super-admin | vault_identity_group.oidc_provider_azure_group_super_admin | **secrets/***| [vault_super_admin_policy.tpl](./terraform/templates/vault_super_admin_policy.tpl) |
 
 ---
 
