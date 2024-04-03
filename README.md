@@ -8,7 +8,9 @@ description: Integrate HashiCorp Vault OIDC Authentication with Third Party Azur
 
 ## REQUIREMENTS
 - Azure
-  - [`az login`](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively)
+  - [Terraform Authentication with Azure: Service Principal](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)
+  - [Terraform Authentication with Azure: CLI](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
+    - [`az login`](https://learn.microsoft.com/en-us/cli/azure/authenticate-azure-cli-interactively)
 - [HashiCorp Vault](https://www.hashicorp.com/products/vault) & [Vault CLI](https://developer.hashicorp.com/vault/tutorials/getting-started/getting-started-install)
 - [HashiCorp Terraform](https://developer.hashicorp.com/terraform/install)
 
