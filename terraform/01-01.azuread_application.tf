@@ -54,9 +54,9 @@ resource "azuread_application" "demo-oidc-example" {
   web {
     redirect_uris = [
       "http://localhost:8250/oidc/callback",
-    #   "${var.vault_url}:${var.vault_cli_port}/oidc/callback",
-    #   "${var.vault_url}/oidc/callback",
-    #   "${var.vault_url}:${var.vault_port}/ui/vault/auth/${var.vault_auth_mount_path}/oidc/callback"
+      #   "${var.vault_url}:${var.vault_cli_port}/oidc/callback",
+      #   "${var.vault_url}/oidc/callback",
+      #   "${var.vault_url}:${var.vault_port}/ui/vault/auth/${var.vault_auth_mount_path}/oidc/callback"
       "${var.vault_url}/ui/vault/auth/${var.vault_auth_mount_path}/oidc/callback"
     ]
   }
