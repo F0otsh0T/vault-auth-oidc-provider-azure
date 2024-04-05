@@ -27,10 +27,10 @@ terraform {
 # }
 
 provider "vault" {
-  address = "${var.vault_url}"
-#  address = "${var.vault_url}:${var.vault_port}"
-#   token   = var.vault_root_token
-#   skip_child_token = true
+  address = var.vault_url
+  #  address = "${var.vault_url}:${var.vault_port}"
+  #  token   = var.vault_root_token
+  #  skip_child_token = true
 }
 
 provider "azurerm" {
